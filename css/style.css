@@ -115,7 +115,7 @@ nav h1 {
 .intro_section h2 {
 	font-size: 24px;
 	font-weight: 700;
-	margin: 20px 0 30px;
+	margin: 30px 0 50px;
 }
 
 .premium_h2 {
@@ -137,7 +137,7 @@ nav h1 {
 .intro_section small a {
 	font-size: 12px;
 	font-weight: 300;
-	color: #fff;
+	color: #000000;
 	text-decoration: underline;
 }
 
@@ -159,11 +159,33 @@ nav h1 {
 	text-decoration: none;
 	text-transform: uppercase;
 	color: #fff;
+	margin-bottom: 10px;
 	background-color: rgb(29, 185, 84);
 }
 
 .premium_button:hover {
 	background-color: rgb(30, 215, 96);
+	transform: scale(1.025);
+}
+
+.special_button {
+	cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 1;
+    width: 100%;
+    text-align: center;
+	padding: 17px 48px;
+	border-radius: 500px; 
+	text-decoration: none;
+	text-transform: uppercase;
+	color: rgb(0, 0, 0);
+	border: 2px solid rgb(0, 0, 0);
+	background-color: transparent;
+}
+.special_button:hover {
 	transform: scale(1.025);
 }
 

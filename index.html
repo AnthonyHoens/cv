@@ -1,15 +1,31 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" dir="ltr">
 	<head>
 		<meta charset="UTF-8">
 		<title>Cv Spotify - Remasterised Anthony</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Anthony Hoens">
+		<meta name="description" content="Anthony est un web master et un web designer offrant ses services pour créer de sites qui vous mettrons en valeur et vous faciliteront les choses pour vos futurs projets.">
+		<meta name="keywords" content="Anthony, Hoens, web, web master, web designer, artiste, site, acheter, cv, portfolio">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="icon" href="./img/favicon.png">
 	</head>
 	<body>
-		<header>
+		<div class="screenshot">
+			<div class="container">
+				<div><a href="./screenshot_phone.jpg">Screenshot téléphone</a></div>
+				<div><a href="./screenshot_tablette.jpg">Screenshot Tablette</a></div>
+				<div><a href="./screenshot_computer.jpg">Screenshot Ordinateur</a></div>
+				<button class="close_button">
+					<span></span>
+					<span></span>
+				</button>
+			</div>
+		</div>
+		<header class="header">
 			<div class="container">
 				<nav role="navigation">
-					<h1>
+					<h1 role="heading" aria-level="1">
 						Navigation principale
 					</h1>
 					<a href="#" class="img">
@@ -38,11 +54,11 @@
 		<main>
 			<section class="intro_section">
 				<div class="container">
-					<h1>
-						Hoens Anthony | Web Master
+					<h1 role="heading" aria-level="1">
+						Hoens Anthony | Web Master & Web Designer
 					</h1>
-					<h2>
-						Travaillez dans le joie et la bonne humeur.
+					<h2 role="heading" aria-level="2">
+						Travaillez dans la joie et la bonne humeur.
 					</h2>
 					<a href="#tarifs" class="premium_button">Voir les tarifs</a>
 					<a href="#school" class="special_button">Voir mon parcours scolaires</a>
@@ -51,156 +67,180 @@
 			</section>
 			<section class="why_premium section" id="school">
 				<div class="container">
-					<h2 class="premium_h2">
-						Mon parcours scolaires
+					<h2 class="premium_h2" role="heading" aria-level="2">
+						Mon parcours scolaire
 					</h2>
-					<div class="why_premium_div">
-						<img src="img/why_premium_img/img1.png" alt="">
-						<div class="why_premium_group">
-							<h3>
-								Athénée Royal de Herstal
-							</h3>
-							<p>
-								De 2009 à 2014
-							</p>
+					<div class="school_position">
+						<div class="why_premium_div">
+							<img src="img/why_premium_img/img1.png" alt="École Athénée Royal de Herstal">
+							<div class="why_premium_group">
+								<h3 role="heading" aria-level="3">
+									Athénée Royal de Herstal
+								</h3>
+								<p>
+									De 2009 à 2014
+								</p>
+							</div>
 						</div>
-					</div>
-					<div class="why_premium_div">
-						<img src="img/why_premium_img/img2.png" alt="">
-						<div class="why_premium_group">
-							<h3>
-								Institut Marie-Thérèse
-							</h3>
-							<p>
-								De 2014 à 2016
-							</p>
+						<div class="why_premium_div">
+							<img src="img/why_premium_img/img2.png" alt="École Institut Marie-Thérèse">
+							<div class="why_premium_group">
+								<h3 role="heading" aria-level="3">
+									Institut Marie-Thérèse
+								</h3>
+								<p>
+									De 2014 à 2016
+								</p>
+							</div>
 						</div>
-					</div>
-					<div class="why_premium_div">
-						<img src="img/why_premium_img/img3.png" alt="">
-						<div class="why_premium_group">
-							<h3>
-								ESA Saint-Luc Liège
-							</h3>
-							<p>
-								De 2016 à 2017
-							</p>
+						<div class="why_premium_div">
+							<img src="img/why_premium_img/img3.png" alt="École ESA Saint-Luc Liège">
+							<div class="why_premium_group">
+								<h3 role="heading" aria-level="3">
+									ESA Saint-Luc Liège
+								</h3>
+								<p>
+									De 2016 à 2017
+								</p>
+							</div>
 						</div>
-					</div>
-					<div class="why_premium_div">
-						<img src="img/why_premium_img/img4.png" alt="">
-						<div class="why_premium_group">
-							<h3>
-								HEPL - Haute Ecole de la Province de Liège
-							</h3>
-							<p>
-								De 2017 à 2020
-							</p>
+						<div class="why_premium_div">
+							<img src="img/why_premium_img/img4.png" alt="École HEPL - Haute Ecole de la Province de Liège">
+							<div class="why_premium_group">
+								<h3 role="heading" aria-level="3">
+									HEPL - Haute Ecole de la Province de Liège
+								</h3>
+								<p>
+									De 2017 à 2020
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
 			</section>
+			<section class="cancel_section">
+				<div class="container">
+					<img src="./img/switch-green.png" alt>
+					<h2 role="heading" aria-level="2">
+						De la qualité sur tout travaux
+					</h2>
+					<p>
+						Vous êtes assuré d'avoir un travail fini avec un beau design et un site exceptionnel.
+					</p>
+				</div>
+			</section>
 			<section id="tarifs" class="abo_select section">
 				<div class="container">
-					<h2 class="premium_h2">
-						Sélectionner votre tarif
+					<h2 class="premium_h2" role="heading" aria-level="2">
+						Choississez votre envie
 					</h2>
 					<p class="description">
 						Sélectionner le tarif de votre choix en fonction de ce que vous voulez.
 					</p>
-					
-					<section id="solo" class="abo" title="plan">
-						<div class="button">
-							<svg id="0" viewBox="643.5 386 22.1 21.9" width="100%" height="100%"><path d="M665.6,396.3c0,0.3-0.1,0.7-0.4,0.9l-9.8,10.4c-0.5,0.5-1.3,0.5-1.7,0l-9.8-10.4c-0.5-0.5-0.5-1.3,0-1.8
-							  s1.3-0.5,1.7,0l8.9,9.5l8.9-9.5c0.5-0.5,1.3-0.5,1.7,0C665.5,395.6,665.6,396,665.6,396.3z"><path d="M665.6,387.3c0,0.3-0.1,0.7-0.4,0.9l-9.8,10.4c-0.5,0.5-1.3,0.5-1.7,0l-9.8-10.4c-0.5-0.5-0.5-1.3,0-1.8
-							   s1.3-0.5,1.7,0l8.9,9.5l8.9-9.5c0.5-0.5,1.3-0.5,1.7,0C665.5,386.6,665.6,387,665.6,387.3z"></path></path></svg>
-						</div>
-						<p class="free_test">
-							Qualité assurée
-						</p>
-						<h3>
-							HTML & CSS
-						</h3>
-						<p class="price">
-							399 &euro;
-						</p>
-						<p class="compte">
-							10 pages maximum
-						</p>
-						<div id="soloDiv" class="hidden">
-							<ul>
-								<li>Un beau design en fonction de vous.</li>
-								<li>10 pages maximum.</li>
-								<li>Un site uniquement en HTML et CSS.</li>
-							</ul>
-							<a href="#" class="premium_button">Prendre ce tarif&nbsp;!</a>
-							<small>
-								<a href="#">Lire les termes du contrat.</a>
-							</small>
-						</div>
-				</section>
-				<section id="family" class="abo" title="plan">
-					<div class="button">
-						<svg id="0" viewBox="643.5 386 22.1 21.9" width="100%" height="100%"><path d="M665.6,396.3c0,0.3-0.1,0.7-0.4,0.9l-9.8,10.4c-0.5,0.5-1.3,0.5-1.7,0l-9.8-10.4c-0.5-0.5-0.5-1.3,0-1.8
-      					s1.3-0.5,1.7,0l8.9,9.5l8.9-9.5c0.5-0.5,1.3-0.5,1.7,0C665.5,395.6,665.6,396,665.6,396.3z"><path d="M665.6,387.3c0,0.3-0.1,0.7-0.4,0.9l-9.8,10.4c-0.5,0.5-1.3,0.5-1.7,0l-9.8-10.4c-0.5-0.5-0.5-1.3,0-1.8
-       					s1.3-0.5,1.7,0l8.9,9.5l8.9-9.5c0.5-0.5,1.3-0.5,1.7,0C665.5,386.6,665.6,387,665.6,387.3z"></path></path></svg>
+					<div class="position">
+						<section id="solo" class="abo" title="plan">
+							<p class="free_test">
+								Qualité assurée
+							</p>
+							<h3 role="heading" aria-level="3">
+								HTML & CSS
+							</h3>
+							<p class="price">
+								399 &euro;
+							</p>
+							<p class="compte">
+								10 pages maximum
+							</p>
+							<div id="soloDiv">
+								<ul>
+									<li>Un beau design en fonction de vous.</li>
+									<li>10 pages maximum.</li>
+									<li>Un site uniquement en HTML et CSS.</li>
+								</ul>
+								<a href="#" class="premium_button">Choisir&nbsp;!</a>
+								<small>
+									<a href="#">Lire les termes du contrat.</a> Tout travail est réalisé sous les droits d'auteurs, toutes reproductions ou tentatives de reproductions sera puni par la loi.
+								</small>
+							</div>
+						</section>
+						<section id="solo" class="abo" title="plan">
+							<p class="free_test">
+								Qualité assurée
+							</p>
+							<h3 role="heading" aria-level="3">
+								Retravaillé un projet
+							</h3>
+							<p class="price">
+								700 &euro;
+							</p>
+							<p class="compte">
+								Pages illimitées
+							</p>
+							<div id="soloDiv">
+								<ul>
+									<li>Une qualitée de travail toujours présente.</li>
+									<li>Autant de pages que vous le désirez.</li>
+									<li>Tout types de sites.</li>
+								</ul>
+								<a href="#" class="premium_button">Choisir&nbsp;!</a>
+								<small>
+									<a href="#">Lire les termes du contrat.</a> Tout travail est réalisé sous les droits d'auteurs, toutes reproductions ou tentatives de reproductions sera puni par la loi.
+								</small>
+							</div>
+						</section>
+						<section id="family" class="abo" title="plan">
+							<p class="free_test">
+								Qualité assurée
+							</p>
+							<h3 role="heading" aria-level="3">
+								PHP
+							</h3>
+							<p class="price">
+								1200 &euro;
+							</p>
+							<p class="compte">
+								Pages illimitées
+							</p>
+							<div id="familyDiv">
+								<ul>
+									<li>Un site uniquement en PHP.</li>
+									<li>Un beau design en fonction de vous.</li>
+									<li>Un site qui fonctionnera sur wordpress.</li>
+									<li>Autant de pages que vous le désirez.</li>
+								</ul>
+								<a href="#" class="premium_button">Choisir&nbsp;!</a>
+								<small>
+									<a href="#">Lire les termes du contrat.</a> Tout travail est réalisé sous les droits d'auteurs, toutes reproductions ou tentatives de reproductions sera puni par la loi.
+								</small>
+							</div>
+						</section>
+						<section id="student" class="abo" title="plan">
+							<p class="free_test">
+								Qualité assurée
+							</p>
+							<h3 role="heading" aria-level="3">
+								E-commerce
+							</h3>
+							<p class="price">
+								De 3000 &euro; jusque 10 000 &euro;
+							</p>
+							<p class="compte">
+								1 site complet
+							</p>
+							<div id="studentDiv">
+								<ul>
+									<li>Un site e-commerce.</li>
+									<li>Un site fait en PHP.</li>
+									<li>Un beau design en fonction de vous.</li>
+									<li>Autant de pages que vous le désirez.</li>
+								</ul>
+								<a href="#" class="premium_button">Choisir&nbsp;!</a>
+								<small>
+									<a href="#">Lire les termes du contrat.</a> Tout travail est réalisé sous les droits d'auteurs, toutes reproductions ou tentatives de reproductions sera puni par la loi.
+								</small>
+							</div>
+						</section>
 					</div>
-					<p class="free_test">
-						Qualité assurée
-					</p>
-					<h3>
-						PHP
-					</h3>
-					<p class="price">
-						1200 &euro;
-					</p>
-					<p class="compte">
-						Autant de pages que le client en veut
-					</p>
-					<div id="familyDiv" class="hidden">
-						<ul>
-							<li>Un site uniquement en PHP.</li>
-							<li>Un beau design en fonction de vous.</li>
-							<li>Un site qui fonctionnera sur wordpress.</li>
-							<li>Autant de pages que vous le désirez.</li>
-						</ul>
-						<a href="#" class="premium_button">Prendre ce tarif&nbsp;!</a>
-						<small>
-							<a href="#">Lire les termes du contrat.</a>
-						</small>
-					</div>
-				</section>
-				<section id="student" class="abo" title="plan">
-					<div class="button">
-						<svg id="0" viewBox="643.5 386 22.1 21.9" width="100%" height="100%"><path d="M665.6,396.3c0,0.3-0.1,0.7-0.4,0.9l-9.8,10.4c-0.5,0.5-1.3,0.5-1.7,0l-9.8-10.4c-0.5-0.5-0.5-1.3,0-1.8
-      					s1.3-0.5,1.7,0l8.9,9.5l8.9-9.5c0.5-0.5,1.3-0.5,1.7,0C665.5,395.6,665.6,396,665.6,396.3z"><path d="M665.6,387.3c0,0.3-0.1,0.7-0.4,0.9l-9.8,10.4c-0.5,0.5-1.3,0.5-1.7,0l-9.8-10.4c-0.5-0.5-0.5-1.3,0-1.8
-       					s1.3-0.5,1.7,0l8.9,9.5l8.9-9.5c0.5-0.5,1.3-0.5,1.7,0C665.5,386.6,665.6,387,665.6,387.3z"></path></path></svg>
-					</div>
-					<p class="free_test">
-						Qualité assurée
-					</p>
-					<h3>
-						E-commerce
-					</h3>
-					<p class="price">
-						De 3000 &euro; jusque 10 000 &euro;
-					</p>
-					<p class="compte">
-						1 site complet
-					</p>
-					<div id="studentDiv" class="hidden">
-						<ul>
-							<li>Un site e-commerce.</li>
-							<li>Un site fait en PHP.</li>
-							<li>Un beau design en fonction de vous.</li>
-							<li>Autant de pages que vous le désirez.</li>
-						</ul>
-						<a href="#" class="premium_button">Prendre ce tarif&nbsp;!</a>
-						<small>
-							<a href="#">Lire les termes du contrat.</a>
-						</small>
-					</div>
-				</section>
 				</div>
 			</section>
 		</main>
@@ -208,6 +248,7 @@
 			<div class="container">
 				<p>
 					<a href="#">Belge</a>
+					<span></span>
 				</p>
 				<div class="groupElt">
 					<nav class="secondary_nav">
@@ -229,6 +270,5 @@
 		</footer>
 		<script src="js/menu.js"></script>
 		<script src="js/main.js"></script>
-		<script src="js/abonnement.js"></script>
 	</body>
 </html>

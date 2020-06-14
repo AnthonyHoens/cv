@@ -25,6 +25,61 @@ body {
 	padding: 35px 0px;
 }
 
+.screenshot {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #509bf5;
+}
+.screenshot div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 12px;
+	font-weight: 400;
+	text-align: center;
+	flex: 1;
+	min-height: 50px;
+}
+.screenshot .container div:hover {
+	background-color: #7ab5f9;
+}
+.screenshot a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: #FFF;
+	padding: 16px 0;
+}
+
+.screenshot button {
+	display: block;
+	height: 50px;
+	width: 25px;
+	padding: 0;
+	height: 100%;
+	background-color: transparent;
+	border: none;
+}
+
+.screenshot span {
+	display: block;
+	width: 22px;
+	height: 3px;
+	background-color: #FFF;
+	border-radius: 1px;
+}
+.screenshot span:last-of-type{
+	margin-top: 4px;
+}
+.screenshot span:nth-child(1) {
+	transform: rotate(-45deg) translateX(-4.5px);
+}
+.screenshot span:nth-child(2) {
+	transform: rotate(45deg) translateX(-4.5px);
+}
 
 header {
 	width: 100%;
@@ -39,11 +94,16 @@ header {
 	background-color: rgb(0,0,0);
 }
 
+.header {
+	margin-top: 50px;
+}
+
 main {
 	padding-bottom: 15px;
 }
 
 button {
+	cursor: pointer;
 	padding-left: 15px;
 	height: 100%;
 	background-color: transparent;
@@ -55,7 +115,7 @@ button {
 	position: absolute;
 	width: 100vw;
 	height: 100vh;
-	top: 0;
+	top: -50px;
 	left: 0; 
 	background: rgba(0, 0, 0, 0.75);
 }
@@ -258,7 +318,7 @@ nav h1 {
 	text-decoration: underline;
 }
 
-.intro_section small::before {
+small:not(footer small)::before {
 	content: "*";
 }
 
@@ -337,6 +397,7 @@ nav h1 {
 
 .why_premium_div p {
 	font-size: 16px;
+	line-height: 1.5;
 	color: rgb(34, 35, 38);
 }
 
@@ -349,6 +410,8 @@ nav h1 {
 
 .abo {
 	position: relative;
+	max-width: 400px;
+	margin: 0 auto;
 	padding: 20px;
 	background-color: white;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
@@ -425,8 +488,34 @@ nav h1 {
 	display: none;
 }
 
-
-
+.cancel_section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 400px;
+	text-align: center;
+	background: rgb(248, 248, 248);
+}
+.cancel_section img {
+	height: 30px;
+	margin-bottom: 10px;
+} 
+.cancel_section h2 {
+    width: auto;
+    max-width: 100%;
+    font-size: 28px;
+	line-height: 1.2;
+    font-weight: 900;
+	margin-bottom: 30px;
+}
+.cancel_section p {
+    width: 100%;
+    max-width: 100%;
+    font-size: 18px;
+    font-weight: 400;
+	line-height: 1.5;
+}
 
 .groupElt {
 	display: flex;
@@ -443,6 +532,24 @@ footer {
 	background-color: #000;
 	padding-top: 35px;
 	padding-bottom: 30px;
+}
+
+footer p a {
+	position: relative;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+footer p span {
+    display: inline-block;
+    font-size: 18px;
+    width: 1.33333333em;
+	height: 1em;
+	box-shadow: 0 0 8px 2px #FFF;
+	vertical-align: middle;
+	background-position: 50%;
+    background-repeat: no-repeat;
+	background-size: contain;
+	background-image: url("https://upload.wikimedia.org/wikipedia/commons/6/65/Flag_of_Belgium.svg");
 }
 footer small {
 	font-size: 10px;
@@ -482,13 +589,20 @@ footer p {
 
 
 @media screen and (min-width: 770px) {
+	.intro_section h1 {
+		font-size: 80px;
+	}
+	.intro_section h2 {
+		font-size: 30px;
+	}
+	.premium_button, .special_button {
+		width: auto;
+		padding: 17px 48px;
+	}
 	.container {
 		width: 750px;
 		padding: 0 15px;
 		margin: 0 auto;
-	}
-	.premium_button {
-		width: auto;
 	}
 	.why_premium {
 		display: flex;
@@ -502,15 +616,6 @@ footer p {
 	.abo_select {
 		padding-bottom: 75px;
 	}
-	.abo {
-		display: inline-block;
-		width: 32%;
-		vertical-align: top;
-		min-height: 400px;
-	}
-	.abo:not(:last-of-type) {
-		margin-right: 1%;
-	}
 	.abo .button {
 		display: none;
 	}
@@ -520,6 +625,34 @@ footer p {
 	.abo .premium_button {
 		display: block;
 		widows: 100%;
+	}
+	.school_position {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.school_position .why_premium_div {
+		width: 50%;
+		flex-grow: 1;
+	}
+	.why_premium_div:nth-child(3), .why_premium_div:nth-child(4) {
+		margin-bottom: 50px;
+	}
+	.section {
+		padding: 75px 0;
+	}
+	.cancel_section h2 {
+		font-size: 40px;
+	}
+	.cancel_section p {
+		font-size: 24px;
+	}
+	.why_premium h2 {
+		font-size: 48px;
+		margin-bottom: 72px;
+	}
+	footer p, footer small, footer .secondary_nav a {
+		font-size: 12px;
 	}
 }
 
@@ -595,5 +728,35 @@ footer p {
 		width: 1170px;
 		padding: 0 15px;
 		margin: 0 auto;
+	}
+	.position {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+	.position section {
+		flex: 1;
+		margin: 0 10px;
+		padding: 16px;
+		min-height: 600px;
+	}
+	.position ul {
+		min-height: 280px;
+	}
+	.school_position .why_premium_div {
+		display: block;
+		width: 25%;
+	}
+	.why_premium_div img {
+		display: block;
+		width: 142px;
+		height: auto;
+		text-align: center;
+		margin: 0 auto 40px;
+	}
+	.why_premium_group {
+		text-align: center;
 	}
 }

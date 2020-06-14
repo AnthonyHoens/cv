@@ -10,7 +10,7 @@
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="icon" href="./img/favicon.png">
 	</head>
-	<body>
+	<body itemscope itemtype="https://schema.org/JobPosting">
 		<div class="screenshot">
 			<div class="container">
 				<div><a href="./screenshot_phone.jpg">Screenshot téléphone</a></div>
@@ -41,7 +41,7 @@
 					</button>
 					<div class="hidden"></div>
 					<ul class="first_nav closed">
-						<li><a href="#tarifs" class="white">Tarifs</a></li>
+						<li><a href="#tarifs" class="white">Souriant</a></li>
 						<li><a href="#" class="white">Dynamique</a></li>
 						<li><a href="#" class="white">Ingénieux</a></li>
 						<li role="separator" class="divider"></li>
@@ -54,13 +54,13 @@
 		<main>
 			<section class="intro_section">
 				<div class="container">
-					<h1 role="heading" aria-level="1">
-						Hoens Anthony | Web Master & Web Designer
+					<h1 role="heading" aria-level="1" itemtype="https://schema.org/Person" itemscope>
+						<span itemprop="givenName">Anthony</span> <span itemprop="familyName">Hoens</span> | <span itemprop="jobTitle title">Web Master & Web Designer</span>	
 					</h1>
 					<h2 role="heading" aria-level="2">
-						Travaillez dans la joie et la bonne humeur.
+						22ans | anthony-hoens@hotmail.com
 					</h2>
-					<a href="#tarifs" class="premium_button">Voir les tarifs</a>
+					<a href="#tarifs" class="premium_button">Voir mes prix</a>
 					<a href="#school" class="special_button">Voir mon parcours scolaires</a>
 					<small><a href="#">Lire les termes du contrat.</a> Tout travail est réalisé sous les droits d'auteurs, toutes reproductions ou tentatives de reproductions sera puni par la loi.</small>
 				</div>
@@ -122,17 +122,17 @@
 				<div class="container">
 					<img src="./img/switch-green.png" alt>
 					<h2 role="heading" aria-level="2">
-						De la qualité sur tout travaux
+						Connaissance
 					</h2>
-					<p>
-						Vous êtes assuré d'avoir un travail fini avec un beau design et un site exceptionnel.
+					<p itemprop="skill">
+						HTML | CSS | Javascript | PHP | MySQL
 					</p>
 				</div>
 			</section>
 			<section id="tarifs" class="abo_select section">
 				<div class="container">
 					<h2 class="premium_h2" role="heading" aria-level="2">
-						Choississez votre envie
+						Choississez votre site
 					</h2>
 					<p class="description">
 						Sélectionner le tarif de votre choix en fonction de ce que vous voulez.
@@ -153,9 +153,10 @@
 							</p>
 							<div id="soloDiv">
 								<ul>
-									<li>Un beau design en fonction de vous.</li>
+									<li>Un beau design en fonction de vs attentes.</li>
+									<li>Un site uniquement en HTML et CSS et javascript.</li>
 									<li>10 pages maximum.</li>
-									<li>Un site uniquement en HTML et CSS.</li>
+									<li>Une qualitée de travail assurée.</li>
 								</ul>
 								<a href="#" class="premium_button">Choisir&nbsp;!</a>
 								<small>
@@ -168,7 +169,7 @@
 								Qualité assurée
 							</p>
 							<h3 role="heading" aria-level="3">
-								Retravaillé un projet
+								Retravailler un projet
 							</h3>
 							<p class="price">
 								700 &euro;
@@ -178,9 +179,9 @@
 							</p>
 							<div id="soloDiv">
 								<ul>
-									<li>Une qualitée de travail toujours présente.</li>
+									<li>Tout types de codes.</li>
 									<li>Autant de pages que vous le désirez.</li>
-									<li>Tout types de sites.</li>
+									<li>Une qualitée de travail assurée.</li>
 								</ul>
 								<a href="#" class="premium_button">Choisir&nbsp;!</a>
 								<small>
@@ -203,10 +204,11 @@
 							</p>
 							<div id="familyDiv">
 								<ul>
-									<li>Un site uniquement en PHP.</li>
-									<li>Un beau design en fonction de vous.</li>
-									<li>Un site qui fonctionnera sur wordpress.</li>
+									<li>Un site fait en PHP.</li>
+									<li>Un beau design en fonction de vos attentes.</li>
+									<li>Un site fonctionnel sur wordpress.</li>
 									<li>Autant de pages que vous le désirez.</li>
+									<li>Une qualitée de travail assurée.</li>
 								</ul>
 								<a href="#" class="premium_button">Choisir&nbsp;!</a>
 								<small>
@@ -231,8 +233,9 @@
 								<ul>
 									<li>Un site e-commerce.</li>
 									<li>Un site fait en PHP.</li>
-									<li>Un beau design en fonction de vous.</li>
+									<li>Un beau design en fonction de vos attentes.</li>
 									<li>Autant de pages que vous le désirez.</li>
+									<li>Une qualitée de travail assurée.</li>
 								</ul>
 								<a href="#" class="premium_button">Choisir&nbsp;!</a>
 								<small>
@@ -244,23 +247,23 @@
 				</div>
 			</section>
 		</main>
-		<footer>
+		<footer itemscope itemtype="https://schema.org/Person">
 			<div class="container">
 				<p>
-					<a href="#">Belge</a>
+					<a href="#" itemprop="nationality">Belge</a>
 					<span></span>
 				</p>
 				<div class="groupElt">
 					<nav class="secondary_nav">
 						<ul>
 							<li>
-								<a href="#">Légal</a>
+								<a href="#" itemprop="telephone">04 71 76 15 29</a>
 							</li>
 							<li>
-								<a href="#">Cookies</a>
+								<a href="#" itemprop="email">anthony-hoens@hotmail.com</a>
 							</li>
 							<li>
-								<a href="#">À propos de moi</a>
+								<a href="#" itemprop="address">Rue Ernest Malvoz</a>
 							</li>
 						</ul>
 					</nav>
